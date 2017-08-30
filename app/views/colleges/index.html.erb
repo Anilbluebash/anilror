@@ -1,0 +1,30 @@
+<h1>Listing Colleges</h1>
+
+<%= link_to 'New college', new_college_path %>
+ 
+<table>
+  <tr>
+    <th>college</th>
+    <th>address</th>
+    <th>percentage</th>
+    <th>email</th>
+    <th>contactnumber</th>
+    <th colspan="5"></th>
+  </tr>
+ 
+  <% @colleges.each do |college| %>
+    <tr>
+      <td><%= college.college %></td>
+      <td><%= college.address %></td>
+      <td><%= college.percentage %></td>
+      <td><%= college.email %></td>
+      <td><%= college.contactnumber%></td>
+      <td><%= time_date_format(college.created_at) %></td>
+      <td><%= link_to 'Show', college_path(college) %></td>
+      <td><%= link_to 'Edit', edit_college_path(college) %></td>
+      <td><%= link_to 'Destroy', college_path(college),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>

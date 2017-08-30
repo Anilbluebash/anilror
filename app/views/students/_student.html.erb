@@ -1,0 +1,25 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>age</th>
+    <th>marks</th>
+    <th>rollnumber</th>
+    <th colspan="4"></th>
+  </tr>
+ 
+  <% @college.students.each do |student| %>
+   
+    <tr>
+      <td><%= student.Name %></td>
+      <td><%= student.age %></td>
+      <td><%= student.marks %></td>
+      <td><%= student.rollnumber %></td>
+      
+      <td><%= link_to 'Destroy Student', college_student_path(college_id: @college.id, id: student.id),
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %></td>
+
+    </tr>
+  <% end %>
+</table>
+

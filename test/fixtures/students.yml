@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Name: MyString
+  age: 1
+  marks: 9.99
+
+two:
+  Name: MyString
+  age: 1
+  marks: 9.99

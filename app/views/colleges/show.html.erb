@@ -1,0 +1,37 @@
+<p>
+  <strong>college</strong>
+  <%= @college.college %>
+</p>
+ 
+<p>
+  <strong>address:</strong>
+  <%= @college.address %>
+</p>
+
+<p>
+  <strong>percentage:</strong>
+  <%= @college.percentage %>
+</p>
+
+<p>
+  <strong>email:</strong>
+  <%= @college.email %>
+</p>
+
+<p>
+  <strong>contactnumber:</strong>
+  <%= @college.contactnumber %>
+</p>
+
+
+<%= render 'students/student' %>
+
+
+<h2>Add a student:</h2>
+<%= render 'students/form' %>
+
+
+<td><%= link_to 'Edit', edit_college_path(@college) %></td>
+
+
+<%= link_to 'Back', colleges_path %>

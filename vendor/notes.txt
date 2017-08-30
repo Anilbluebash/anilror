@@ -1,0 +1,3 @@
+render - to simplifiy complex code into simple way-- code divided oin new folder.. and jha need h wha render kr lete h --- partial folder bna k
+
+assocation:- how things are corealed with each other
