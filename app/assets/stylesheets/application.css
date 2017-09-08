@@ -10,9 +10,9 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
+ 
  *= require_self
-
+ *= require_tree
  */
 
 h2 {
@@ -28,8 +28,8 @@ h2 {
  
  p {
  	font-family: verdana;
-    font-size: 20px;
-    color: green;
+    font-size: 16px;
+
  }
 
 .vishu {
@@ -39,3 +39,19 @@ h2 {
 #vishu{
 	color: red;
 }
+
+.aa {
+    padding: 40px;
+    background-color: skyblue;
+}
+
+.aaa { 
+    background-color: black;
+    padding: 40px;
+   }
+
+.aaaa {
+    border:;
+     float: left;
+      background-color: white;
+}   

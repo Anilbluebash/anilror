@@ -1,3 +1,4 @@
+    
     <div style="border:; background-color: skyblue; float: left;  height: 800px; width:1270px">
 
       <div style="border-color: green; border: solid; margin-top: 15px; float: left; background-color: white; margin-left: 230px; height: 380px; width:780px">
@@ -15,7 +16,7 @@
               <%= f.password_field :password, autocomplete: "off", style: "border-radius: 4px  4px 4px 4px; height: 25px; width: 270px;", placeholder: "Password" %>
               </div><br>
 
-              <div>
+              <div> 
               <%= f.submit "Log in", style: "width: 75px;", class: "btn btn-default" %>
 
                <input type="checkbox">Remember me
@@ -24,8 +25,13 @@
             </div> <br>
       
             <p style=" color: grey; font-size: 17px"> New to Twitter?
-              <a href="#" style="text-decoration: none; font-size: 17px">sign up now </a>
+              <a href="/users/sign_up" style="text-decoration: none; font-size: 17px">sign up now </a>
+
+              <!-- using ruby code -->
+              <!--<%= link_to('sign up now', new_user_registration_path)  %>--> 
             </P>
+
+            
 
             <p style=" color: grey; font-size: 17px"> Already using Twitter via text message?
             <a href="#" style="text-decoration: none; font-size: 17px">Activate your account </a></P>
@@ -33,5 +39,6 @@
           </div>
         <% end %>
       </div>
+      
     </div>
  
